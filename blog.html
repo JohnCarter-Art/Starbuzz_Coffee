@@ -58,13 +58,21 @@
 						которая генерирует твит каждый раз, когда вы отпиваете из нее глоток!
 						Подробнее о нашем изобретении вы сможете узнать из моего видео.
 					</p>
+					<!-- Simple video example -->
 					<video 
 						controls
 						preload="auto" 
 						width="512" height="288" 
-						src="video/tweetsip.mp4"
 						poster="images/poster.png"
 						id="video">
+						<source src="video/tweetsip.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>>
+						<source src="video/tweetsip.ogv" type='video/ogg; codecs="theora, vorbis"'>
+						<source src="video/tweetsip.webm" type='video/ogg; codecs="theora, vorbis"'>>
+						<p>
+							Извените, ваш браузер не поддерживает воспроизведение данного видео, 
+							предлагаем вам <a href="video/tweetsip.mp4">скачать его</a>
+							и поспроизвести его на вашем любимом видеоплееере!
+						</p>
 					</video>
 				</article>
 
