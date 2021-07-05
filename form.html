@@ -2,12 +2,70 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Starbuzz Coffee</title>
+		<title>Starbuzz Bean Machine</title>
 		<link type="text/css" rel="stylesheet" href="starbuzz.css">
 	</head>
 
 	<body>
-        
+		<h1>Starbuzz Bean Machine</h1>
+		<h2>Заполните следующую форму и нажмите кнопку «Заказать сейчас», чтобы оформить заказ</h2>
+		<form action="http://starbuzzcoffee.com/processorder.php" method="POST"></form>
+			<p>
+				Выберите кофе: 
+				<select name="characters">
+					<option value="Home">Домашняя смесь</option>
+					<option value="Bolivia">Боливия</option>
+					<option value="Guatemala">Гватемала</option>
+					<option value="Kenya">Кения</option>
+				</select>
+			</p>
+			<p>
+				Тип: <br/>
+				<input type="radio" name="grind" auto value="beans"/>Кофе в зернах<br/>
+				<input type="radio" name="grind" value="ground"/>Молотый
+			</p>
+			<p>
+				Дополнительные услуги: <br/>
+				<input type="checkbox" name="services" value="box"> Подарочная упаковка<br/>
+				<input type="checkbox" name="services" value="catalog"> Доставка каталога вместе с заказом
+			</p>
+			<table>
+				<thead id="client_form">
+					<tr>
+						<th colspan="2">Доставить по адресу:</th>  
+					</tr>
+				</thead>
+				<tr>
+					<td>Имя: </td>
+					<td><input type="text" name="name"/></td>
+				</tr>					
+				<tr>
+					<td>Адрес:</td>
+					<td><input type="text" name="address"/></td>
+				</tr>
+				<tr>
+					<td>Город:</td>						
+					<td><input type="text" name="city"/></td>
+				</tr>
+				<tr>
+					<td>Страна:</td>
+					<td><input type="text" name="country"/></td>
+				</tr>
+				<tr>
+					<td>Почтовый индекс:</td>
+					<td><input type="text" name="zip"/></td>
+				</tr>
+				<tr>
+					<td>Телефон:</td>
+					<td><input type="tel" name="phone"/></td>
+				</tr>
+				<tr>
+					<td>Комментарии клентов:</td>
+					<td><textarea name="comments" rows="10" cols="48"></textarea></td>
+				</tr>					
+			<table>
+			<input type="submit" value="Заказать сейчас"/>
+		</form>
     </body>
 	
 </html>
